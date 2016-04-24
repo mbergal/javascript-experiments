@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/module1.js"],"names":[],"mappings":";;;;;QAEgB,C,GAAA,C;AAAT,SAAS,CAAT,GAAsB;AACzB,WAAO,CAAP;AACH","file":"module1.js","sourcesContent":["// @flow\n\nexport function f() : number {\n    return 1;\n}"]}
