@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTasksOptions">
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="--source-maps --optional runtime --experimental --out-file $ProjectFileDir$/flow/build/$FileName$ $FilePath$" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" value="Transpiles ECMAScript 6 code to ECMAScript 5" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="js" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Babel" />
+      <option name="output" value="$FileNameWithoutExtension$-compiled.js:$FileNameWithoutExtension$-compiled.js.map" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="/usr/local/bin/babel" />
+      <option name="scopeName" value="Project Files" />
+      <option name="trackOnlyRoot" value="true" />
+      <option name="workingDir" value="$FileDir$" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="check --strip-root $FileDirRelativeToProjectRoot$" />
+      <option name="checkSyntaxErrors" value="false" />
+      <option name="description" value="Flow" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="js" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Flow" />
+      <option name="output" value="" />
+      <option name="outputFilters">
+        <array>
+          <FilterInfo>
+            <option name="description" value="flow" />
+            <option name="name" value="flow" />
+            <option name="regExp" value="$FILE_PATH$:$LINE$" />
+          </FilterInfo>
+        </array>
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="/usr/local/bin/flow" />
+      <option name="scopeName" value="Project Files" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$ProjectFileDir$" />
+      <envs />
+    </TaskOptions>
+  </component>
+</project>
