@@ -1,6 +1,8 @@
+
+// dasdasdasdasdasdas
 "use strict";
 
-var a = function () {
+let a = (() => {
     var ref = _asyncToGenerator(function* () {
         (0, _module.f)();
         ///throw new Error( "!!!!"); // this should point to original file
@@ -9,9 +11,9 @@ var a = function () {
     return function a() {
         return ref.apply(this, arguments);
     };
-}();
+})();
 
-var b = function () {
+let b = (() => {
     var ref = _asyncToGenerator(function* () {
         return a();
     });
@@ -19,17 +21,13 @@ var b = function () {
     return function b() {
         return ref.apply(this, arguments);
     };
-}();
+})();
 
-var _module = require("./module1");
+var _module = require('./module1');
 
-var _sourceMapSupport = require("source-map-support");
+var _sourceMapSupport = require('source-map-support');
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
-
-// dasdasdasdasdasdas
-require("babel-core/register");
-require("babel-polyfill");
 
 (0, _sourceMapSupport.install)();
 
